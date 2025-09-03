@@ -66,9 +66,7 @@
     margin-bottom: 1rem;
 }
 
-.footer__copyright {
-    margin-top: 3rem;
-}
+
 
 @media screen and (min-width: 2000px) {
     .app__footer-headtext {
@@ -103,3 +101,54 @@
         width: 80%;
     }
 }
+
+.address-text {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.address-text:hover {
+  color: #dcca87; /* highlight color on hover */
+}
+
+/* Popup styling */
+.popup {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  animation: fadeInOut 2s ease forwards;
+  z-index: 1000;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+}
+
+.address-text {
+  all: unset; /* resets ALL browser button styles */
+
+}
+

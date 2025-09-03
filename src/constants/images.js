@@ -20,6 +20,10 @@ import award05 from '../assets/award05.png';
 import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
+import ouzo from '../assets/ouzos-pizza-logo-2x.webp';
+import burger from '../assets/burger-asset.webp';
+import pizza from '../assets/pizza-asset.webp';
+import brick from '../assets/brick-wall.jpg';
 
 export default {
   bg,
@@ -44,4 +48,8 @@ export default {
   sign,
   quote,
   gericht,
+  ouzo,
+  burger,
+  pizza,
+  brick,
 };
