@@ -32,7 +32,7 @@ const pizzas = [
   {
 
     title: 'Hawaiian Pizza',
-    price: ['$14.20', '$17.00'],
+    price: ['S: $14.20', 'L: $17.00'],
     tags: 'Ham and Pineapple',
 
   },

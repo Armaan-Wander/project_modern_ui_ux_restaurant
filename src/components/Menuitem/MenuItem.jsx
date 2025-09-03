@@ -10,8 +10,14 @@ const MenuItem = ({ title, price, tags }) => (
       </div>
       <div className="app__menuitem-dash" />
       <div className="app__menuitem-price">
+
+        {
+          Array.isArray(price)
+            ? price.map((p, index) => (<button key={index} className="app__menuitem-price-button p__cormorant" type="submit">{p}</button>))
+            : <button className="app__menuitem-price-button p__cormorant" type="submit">{price}</button>
+        }
         {/* <p className="p__cormorant">{price}</p> */}
-        <button className="app__menuitem-price-button p__cormorant" type="submit">{price}</button>
+        {/* <button className="app__menuitem-price-button p__cormorant" type="submit">{price}</button> */}
       </div>
     </div>
 

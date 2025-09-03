@@ -30,6 +30,7 @@
 
 .app__menuitem-price {
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
 }
@@ -40,7 +41,9 @@
     align-items: flex-end;
     background-color: transparent;
     color: white;
-    border: none;
+    /* border: none; */
 }
+
+
 
 
